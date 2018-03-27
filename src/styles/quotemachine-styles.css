@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Kalam|Monoton');
 :root {
 --primary:#DB0000;
 --background: black;
@@ -10,6 +11,7 @@ body {
   padding: 0;
   color:var(--color);
   background: var(--background);
+  font-family: 'Kalam', cursive;
 }
 .app-wrapper {
   width: 100%;
@@ -26,7 +28,9 @@ body {
 }
 .app-wrapper > p {
   align-self: center;
+  font-family: 'Caveat', cursive;
 }
 .app-wrapper h1 {
   margin-top: 2rem;
+  font-family: 'Monoton', cursive;
 }
