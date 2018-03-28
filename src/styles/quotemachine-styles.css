@@ -40,7 +40,6 @@ body {
   font-family: 'Nunito';
   flex-flow: column wrap;
   align-content: stretch;
-  transition: all 800ms ease-in-out;
 }
 .app-wrapper blockquote > label {
   font-size: 16px;
@@ -51,6 +50,17 @@ body {
 .app-wrapper blockquote > label {
   margin: 2rem;
   align-self: left;
+}
+.twitter {
+  grid-row: 3/5;
+  font-size: 40px;
+  color:lightblue;
+  grid-column: 4/6;
+  transition: all 400ms ease;
+  margin: 1.5rem 1rem 1rem 1rem;
+}
+.twitter:hover {
+  transform:scale(1.2);
 }
 .app-wrapper button {
   width: 120px;
@@ -67,6 +77,8 @@ body {
   box-shadow: 0 0 10px 2px #686375;
 }
 .app-wrapper button:hover {
-  cursor: pointer;
   background: var(--primaryHover);
+}
+.twitter:hover, button:hover {
+  cursor: pointer;
 }
