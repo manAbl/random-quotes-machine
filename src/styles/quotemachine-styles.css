@@ -17,8 +17,8 @@ body {
   width: 100%;
   display: grid;
   height: 100vmin;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 25% 50% 25%;
+  grid-template-columns: 25% 50% 25%;
 }
 .app-wrapper {
   grid-row: 2/3;
@@ -48,28 +48,28 @@ body {
   margin: 4rem 2rem 2rem 2rem;
 }
 .app-wrapper blockquote > label {
-  margin: 2rem;
+  margin: 1rem;
   align-self: left;
 }
 .twitter {
   grid-row: 3/5;
-  font-size: 40px;
+  font-size: 30px;
   color:lightblue;
   grid-column: 4/6;
   transition: all 400ms ease;
-  margin: 1.5rem 1rem 1rem 1rem;
+  margin: 0rem 1rem 1rem 1rem;
 }
 .twitter:hover {
   transform:scale(1.2);
 }
 .app-wrapper button {
   width: 120px;
-  margin: 1rem;
   height: 50px;
   color: white;
   grid-row: 3/5;
   font-size: 12px;
   grid-column: 2/4;
+  margin-top: -1rem;
   border-radius: 4px;
   text-transform: uppercase;
   background: var(--primary);
@@ -78,7 +78,27 @@ body {
 }
 .app-wrapper button:hover {
   background: var(--primaryHover);
+  border-color: var(--primaryHover);
 }
 .twitter:hover, button:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 60rem) {
+  #root {
+    margin-top: 1rem;
+  }
+ .app-wrapper {
+    grid-row: 1/4;
+    margin: 3rem;
+    grid-column: 1/4;
+ }
+}
+@media screen and (max-width: 40rem) {
+  #root {
+    margin-top: 6rem;
+  }
+ .app-wrapper {
+    grid-row: 1/4;
+    grid-column: 1/4;
+ }
 }
