@@ -34,35 +34,45 @@ body {
   grid-row: 2/3;
   grid-column: 2/5;
 
-  display: flex;
   font-size: 20px;
   text-align: center;
   font-family: 'Nunito';
-  flex-flow: column wrap;
-  align-content: stretch;
+}
+.app-wrapper blockquote > i {
+  font-size: 35px;
+  color: black;
+  float: left;
+  position: relative;
 }
 .app-wrapper blockquote > label {
   font-size: 16px;
 }
 .app-wrapper blockquote > p {
-  margin: 4rem 2rem 2rem 2rem;
+  margin: 0rem
 }
 .app-wrapper blockquote > label {
   margin: 1rem;
   align-self: left;
 }
 .twitter {
-  grid-row: 3/5;
   font-size: 30px;
   color:lightblue;
-  grid-column: 4/6;
   transition: all 400ms ease;
+}
+.twitter-btn {
+  outline: 0;
+  width: 40px;
+  height: 1rem;
+  border: none;
+  grid-row: 3/5;
+  grid-column: 4/6;
+  background: transparent;
   margin: 0rem 1rem 1rem 1rem;
 }
 .twitter:hover {
   transform:scale(1.2);
 }
-.app-wrapper button {
+.random-btn {
   width: 120px;
   height: 50px;
   color: white;
@@ -76,11 +86,11 @@ body {
   border: 2px solid var(--primary);
   box-shadow: 0 0 10px 2px #686375;
 }
-.app-wrapper button:hover {
+.random-btn:hover {
   background: var(--primaryHover);
   border-color: var(--primaryHover);
 }
-.twitter:hover, button:hover {
+button:hover {
   cursor: pointer;
 }
 @media screen and (max-width: 60rem) {
